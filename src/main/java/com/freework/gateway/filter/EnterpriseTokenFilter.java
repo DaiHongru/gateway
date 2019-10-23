@@ -34,7 +34,7 @@ public class EnterpriseTokenFilter extends ZuulFilter {
         String url = request.getRequestURI();
         String vocationManageUrl = "vocation/edit";
         String enterpriseManageUrl = "enterprise/current";
-        String cvitaeManageUrl = "cvitae/current";
+        String cvitaeManageUrl = "cvitae/enterprise";
         if (url.contains(vocationManageUrl) || url.contains(enterpriseManageUrl) ||
                 url.contains(cvitaeManageUrl)) {
             return true;
